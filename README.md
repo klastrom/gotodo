@@ -10,7 +10,7 @@
 
 以下のコマンドを使用してDockerイメージをビルドします：
 
-```docker build -t gotodo:latest```
+```$ docker build -t gotodo:latest```
 
 ### Dockerコンテナの実行
 
@@ -32,14 +32,14 @@
 
 以下のコマンドを使用してTODOアイテムを追加します：
 
-```curl -X POST http://localhost:8080/todos/add -H "Content-Type: application/json" -d '{"task": "Buy milk"}'```
+```$ curl -X POST http://localhost:8080/todos/add -H "Content-Type: application/json" -d '{"task": "Buy milk"}'```
 
 
 #### TODOアイテムを削除する
 
 以下のコマンドを使用してTODOアイテムを削除します：
 
-```curl -X POST http://localhost:8080/todos/delete -H "Content-Type: application/json" -d '{"id": 1}'```
+```$ curl -X POST http://localhost:8080/todos/delete -H "Content-Type: application/json" -d '{"id": 1}'```
 
 
 
