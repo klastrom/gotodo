@@ -9,14 +9,14 @@
 ### Dockerイメージのビルド
 
 以下のコマンドを使用してDockerイメージをビルドします：
-sh
-docker build -t gotodo:latest
+
+```docker build -t gotodo:latest```
 
 ### Dockerコンテナの実行
 
 以下のコマンドを使用してDockerコンテナを実行します：
-sh
-docker run -p 8080:8080 gotodo:latest
+
+```$ docker run -p 8080:8080 gotodo:latest```
 
 
 ### TODOアイテムの操作
@@ -24,22 +24,23 @@ docker run -p 8080:8080 gotodo:latest
 #### TODOリストを取得する
 
 以下のコマンドを使用してTODOリストを取得します：
-sh
-curl http://localhost:8080/todos
+
+```$ curl http://localhost:8080/todos```
 
 
 #### TODOアイテムを追加する
 
 以下のコマンドを使用してTODOアイテムを追加します：
-sh
-curl -X POST http://localhost:8080/todos/add -H "Content-Type: application/json" -d '{"task": "Buy milk"}'
+
+```curl -X POST http://localhost:8080/todos/add -H "Content-Type: application/json" -d '{"task": "Buy milk"}'```
 
 
 #### TODOアイテムを削除する
 
 以下のコマンドを使用してTODOアイテムを削除します：
-sh
-curl -X POST http://localhost:8080/todos/delete -H "Content-Type: application/json" -d '{"id": 1}'
+
+```curl -X POST http://localhost:8080/todos/delete -H "Content-Type: application/json" -d '{"id": 1}'```
+
 
 
 ## エンドポイント
